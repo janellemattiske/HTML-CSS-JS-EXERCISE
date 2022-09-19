@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Form</title>
+    <style>
+        body{
+             background-color:grey;
+        }
+        .main{
+            
+           margin-left: 300px;
+           margin-right: 300px;
+           display: grid;
+           align-items: center;
+           justify-content: center;
+            border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+           
+        }
+        button{
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+    </style>
+</head>
+<body>
+    <form>
+    <div class="main">
+        <div>
+            <h3>Advertising Estimate</h3>
+         </div>
+        <div>
+
+    <label>Name/Company Name</label>
+    </div>
+    <div>
+    <input type="text" maxlength="10">
+    </div>
+    <div>
+        <label>Email</label>
+        </div>
+        <div>
+        <input type="email">
+    </div>
+    <div style="display: inline-grid">
+        <label>Ad Start Date</label>
+        <input type="date">
+    
+        <label>Ad End Date</label>
+        <input type="date">
+    </div>
+    <div>
+        <label>Advertising Size (pixels)</label> 
+    
+    </div>
+    <div id="rad">
+        <input type="radio">
+    
+    
+        <label>Option1</label>
+        </div>
+        <div id="rad">
+        <input type="radio">
+
+        <label>Option2</label>
+        </div>
+        <div id="rad">
+        <input type="radio">
+        <label>Option3</label>
+        </div>
+    
+
+     <div style="display: inline-grid">
+        <label>Which sites would you like to adverstise on</label> 
+    
+    
+        <div>
+        <input type="radio">
+        <label>Option1</label>
+        </div>
+        <div>
+        <input type="radio">
+        <label>Option2</label>
+        </div>
+        <div>
+        <input type="radio">
+        <label>Option3</label>
+        </div>
+    </div>
+    
+    <div >
+        
+        <label>Website to be adverstised</label>
+        <div>
+        <input type="text">
+        </div>
+    </div>
+
+    <div>
+        <label>Comments</label>
+    </div>
+        <textarea></textarea>
+    <div>
+    
+        <button onclick="myfunc()">Submit</button>
+    </div>
+    
+    </div>
+    </form>
+
+    <script>
+        function myfunc(){
+            alert("Data Submitted Succesfully")
+        }
+    </script>
+
+</body>
+</html>
